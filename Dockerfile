@@ -6,7 +6,10 @@ WORKDIR /app
 
 RUN npm install
 
+RUN nodejs seeds/seed.js
+
+
 EXPOSE 3000
 
-CMD ["node", "app.js"]
+CMD ["nodejs", "app.js"]
 

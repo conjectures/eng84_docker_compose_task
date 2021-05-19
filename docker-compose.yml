@@ -1,0 +1,23 @@
+version: "3.9"
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: conjectures/eng84_sparta_app:v02
+    depends_on:
+      - mongodb
+    environment:
+      DB_HOST: mongodb://mongodb:27017/posts
+    ports:
+      - 3000:3000
+    container_name: sparta_app
+
+  mongodb:
+    image: mongo
+    restart: always
+    container_name: database
+
+
+
+
