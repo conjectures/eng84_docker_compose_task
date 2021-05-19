@@ -16,7 +16,12 @@ services:
   mongodb:
     image: mongo
     restart: always
+    volumes:
+      - mongodata:/var/lib/mongodb
     container_name: database
+    ports:
+      - 27017:27017
+
 
 
 
