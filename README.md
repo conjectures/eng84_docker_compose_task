@@ -3,6 +3,8 @@
 ## Summary
 Create the two-tier architecture node app with multiple containers, instead of VMs.
 
+![Docker Compose Banner](docker-compose-banner.png)
+
 ## Acceptance Criteria
 - Dockerised node app
 - App fully working with database
